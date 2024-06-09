@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-size: 100%;
+    background-color: #99a8cd;
+    background-image: url(../images/bg.png);
+    background-size: 10%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header,
+.header .blank {
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    position: absolute;
+    right: 5vw;
+}
+header li {
+    display: inline;
+    margin: 0 1vw
+}
+header a {
+    color: white;
+}
+header h1 {
+    color: white;
+    position: absolute;
+    left: 5vw;
+}
+header h1 a:hover {
+    text-decoration: none;
+}

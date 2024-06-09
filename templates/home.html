@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8"/>
+        <title>教育機構電子郵件判斷</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link rel="icon" href="../static/images/icon.ico">
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <h1><a href="{{url_for('home')}}">教育機構電子郵件判斷</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('github')}}">Github</a></li>
+                        <li><a href="{{url_for('sign')}}">簽到</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="blank"></div>
+        </div>
+
+        <main>
+            <style>
+                main {
+                    height: 90vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                main h2 {
+                    font-size: 300%;
+                }
+                main form input,
+                main form button {
+                    background-color: transparent;
+                    padding: 5px;
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    margin: 0 5px;
+                }
+            </style>
+            <h2>教育機構電子郵件判斷</h2>
+            <br>
+            <form method="post">
+                <p>輸入電子郵件: <input type="email" placeholder="mail@example.com" name="mail" required><button type="submit">查詢</button></p>
+            </form>
+        </main>
+        <hr/>
+
+    </body>
+</html>
